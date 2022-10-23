@@ -1,0 +1,35 @@
+#profile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+    isolation: isolate;
+}
+
+.menu_container {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    right: 11.53%;
+    top: 0;
+    border: 1px dashed #D0D5DD;
+    border-radius: 20px;
+}
+
+.menu_container>svg:last-child {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .menu_container>svg:last-child {
+        display: block;
+    }
+
+    .menu_container>svg:first-child {
+        display: none;
+    }
+}
