@@ -1,0 +1,42 @@
+/* Auto layout */
+
+.zuri-link-article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 32px;
+    gap: 8px;
+    border: 1px solid #EAECF0;
+    background: #EAECF0;
+    border-radius: 8px;
+    flex-grow: 1;
+}
+
+.zuri-a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #101828;
+}
+
+
+/* width: 158px;
+height: 76px; */
+
+/* Gray/200 */
+
+/* background: #EAECF0; */
+/* Gray/200 */
+
+
+
+/* Inside auto layout */
+
+/* flex: none;
+order: 0; */
