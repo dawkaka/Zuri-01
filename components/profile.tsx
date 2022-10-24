@@ -19,6 +19,7 @@ export const Profile: React.FC<{ picture: string, twitterName: string, slackName
             </div>
             <div style={{ position: "relative" }}>
                 <p className="tx-xl" id="twitter">{twitterName}</p>
+                {/* or display none */}
                 <p id="slack" style={{ visibility: "hidden", position: "absolute" }}>{slackName}</p>
             </div>
         </section>
