@@ -14,8 +14,11 @@ export const Profile: React.FC<{ picture: string, twitterName: string, slackName
                     <path d="M2.16665 2.83332C2.62688 2.83332 2.99998 2.46023 2.99998 1.99999C2.99998 1.53975 2.62688 1.16666 2.16665 1.16666C1.70641 1.16666 1.33331 1.53975 1.33331 1.99999C1.33331 2.46023 1.70641 2.83332 2.16665 2.83332Z" stroke="#98A2B3" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
             </div>
-            <div>
-                <img src={picture} height={88} width={88} style={{ borderRadius: "50%" }} id="profile__img" />
+            <div style={{ position: "relative", borderRadius: "50%", overflow: "hidden", width: "88px", height: "88px", backgroundColor: "blue" }}>
+                <img src={picture} height={88} width={88} id="profile__img" className="p-image" />
+                <div className="img-overlay">
+                    <img src="./camera_icon.png" style={{ position: "absolute", bottom: "5px", left: "50%", transform: "translateX(-50%)", cursor: "pointer" }} />
+                </div>
             </div>
             <div style={{ position: "relative" }}>
                 <h3 className="tx-xl" id="twitter">{twitterName}</h3>

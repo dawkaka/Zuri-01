@@ -8,6 +8,25 @@
     isolation: isolate;
 }
 
+.p-image:hover+.img-overlay {
+    display: block;
+}
+
+.img-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.img-overlay:hover {
+    display: block;
+}
+
 .menu_container {
     position: absolute;
     display: grid;
@@ -23,6 +42,7 @@
 .menu_container>svg:last-child {
     display: none;
 }
+
 
 @media only screen and (max-width: 700px) {
     .menu_container>svg:last-child {
