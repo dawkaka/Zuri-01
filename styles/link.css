@@ -36,4 +36,10 @@
     border: 1px solid #EAECF0;
     background: #EAECF0;
     border-radius: 8px;
+    transition: transform .1s;
+}
+
+.zuri-a:hover {
+    color: #101828;
+    transform: scale(1.05);
 }
