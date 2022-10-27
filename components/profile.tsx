@@ -18,9 +18,9 @@ export const Profile: React.FC<{ picture: string, twitterName: string, slackName
                 <img src={picture} height={88} width={88} style={{ borderRadius: "50%" }} id="profile__img" />
             </div>
             <div style={{ position: "relative" }}>
-                <p className="tx-xl" id="twitter">{twitterName}</p>
+                <h3 className="tx-xl" id="twitter">{twitterName}</h3>
                 {/* or display none */}
-                <p id="slack" style={{ visibility: "hidden", position: "absolute" }}>{slackName}</p>
+                <h3 id="slack" style={{ display: "none" }}>{slackName}</h3>
             </div>
         </section>
     )

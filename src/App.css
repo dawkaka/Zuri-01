@@ -1,5 +1,25 @@
 #root {
-  width: 100%;
+  width: min(100%, 1100px);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
 }
 
 .App {
@@ -38,7 +58,7 @@
 }
 
 .tx-l {
-  font-weight: 600;
+  font-weight: 520;
   font-size: 18px;
   line-height: 28px;
   display: flex;

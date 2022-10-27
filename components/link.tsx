@@ -15,7 +15,7 @@ const links: { title: string, url: string, id: string, sub?: string }[] = [
     },
     {
         title: "The Best Python books",
-        url: "https://books.zuri.team/python-for-beginners?ref_id=devGrammer",
+        url: "https://books.zuri.team/python-for-beginners?ref_id=Dawkaka",
         id: "book__python",
     },
     {

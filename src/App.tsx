@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <main className="main">
         <div className="content">
-          <Profile picture="./me.jpg" twitterName="mo_yussif" slackName="devGrammer" />
+          <Profile picture="./me.jpg" twitterName="mo_yussif" slackName="Dawkaka" />
           <Links />
           <section id="socials" style={{ display: "flex", justifyContent: "center", gap: "24px" }}>
             <div>
