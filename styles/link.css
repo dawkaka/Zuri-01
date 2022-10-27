@@ -2,27 +2,41 @@
 
 .zuri-link-article {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 24px 32px;
-    gap: 8px;
-    border: 1px solid #EAECF0;
-    background: #EAECF0;
-    border-radius: 8px;
     flex-grow: 1;
 }
 
-.zuri-a {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
+.link-wrapper {
+    position: relative;
     display: flex;
+    width: 100%;
+}
+
+.toggle-button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    appearance: none;
+}
+
+.toggle-button:focus {
+    outline: none;
+}
+
+.zuri-a {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    color: #101828;
+    padding: 24px 32px;
+    width: 100%;
+    border: 1px solid #EAECF0;
+    background: #EAECF0;
+    border-radius: 8px;
 }
 
 
