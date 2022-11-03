@@ -50,7 +50,7 @@ const Link = ({ url, title, id, sub, internal }) => {
             <div className="link-wrapper">
                 {
                     internal ?
-                        <a className="zuri-a tx-l"><Li to="/contact" style={{ color: "inherit" }}>{title}</Li></a>
+                        <Li to="/contact" className={"zuri-a tx-l"} style={{ color: "inherit" }}>{title}</Li>
                         :
                         <a href={url} className="zuri-a tx-l" id={id}>{title}</a>
                 }
