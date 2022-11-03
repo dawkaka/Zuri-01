@@ -1,0 +1,31 @@
+.contact-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 0px 96px;
+    gap: 64px;
+}
+
+.contact-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+.contact-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 48px;
+}
+
+.contact-header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+}
