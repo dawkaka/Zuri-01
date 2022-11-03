@@ -1,7 +1,7 @@
 import React, { MouseEvent, MouseEventHandler, useState } from "react"
 import "../styles/link.css"
 
-const links: { title: string, url: string, id: string, sub?: string }[] = [
+const links = [
     {
         title: "Meet The Zuri Team",
         url: "https://training.zuri.team/",
@@ -30,9 +30,9 @@ const links: { title: string, url: string, id: string, sub?: string }[] = [
     }
 ]
 
-const Link: React.FC<{ title: string, id: string, url: string, sub?: string }> = ({ url, title, id, sub }) => {
+const Link = ({ url, title, id, sub }) => {
     const [showSub, setShowsub] = useState(false)
-    const toggleSub = (e: MouseEvent<HTMLButtonElement>) => {
+    const toggleSub = (e) => {
         e.stopPropagation()
         if (sub) {
             setShowsub(!showSub)
@@ -76,7 +76,7 @@ const Link: React.FC<{ title: string, id: string, url: string, sub?: string }> =
 }
 
 
-export const Links: React.FC = () => {
+export const Links = () => {
     return (
         <section id="links">
             {

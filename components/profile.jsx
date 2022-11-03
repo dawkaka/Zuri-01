@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/profile.css"
 
-export const Profile: React.FC<{ picture: string, twitterName: string, slackName: string }> = ({ picture, twitterName, slackName }) => {
+export const Profile = ({ picture, twitterName, slackName }) => {
     return (
         <section id="profile">
             <div className="menu_container">

@@ -79,10 +79,8 @@ h6 {
 
 .footer {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-content: center;
   padding: 0px 32px;
 }
 
@@ -106,7 +104,6 @@ h6 {
 
   .footer {
     padding-inline: 16px;
-    justify-content: center;
-    gap: 24px
+    gap: 10px
   }
 }

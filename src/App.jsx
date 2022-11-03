@@ -1,3 +1,4 @@
+import React from 'react'
 import './App.css'
 import { Links } from "../components/link"
 import { Profile } from "../components/profile"
