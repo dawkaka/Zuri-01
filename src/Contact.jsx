@@ -14,26 +14,33 @@ export default function Contact() {
                         <div className="contact-name">
                             <div className="contact-input-item-container">
                                 <label className="contact-input-label" htmlFor="first_name">First name</label>
-                                <input type="text" id="first_name" placeholder="Enter first name" />
+                                <input type="text" id="first_name" placeholder="Enter first name" className="text-md" />
                             </div>
                             <div className="contact-input-item-container">
                                 <label className="contact-input-label" htmlFor="last_name">Last name</label>
-                                <input type="text" id="last_name" placeholder="Enter last name" />
+                                <input type="text" id="last_name" placeholder="Enter last name" className="text-md" />
                             </div>
                         </div>
                         <div className="contact-input-item-container">
                             <label className="contact-input-label" htmlFor="last_name">Email</label>
-                            <input type="email" id="email" placeholder="youremail@email.com" />
+                            <input type="email" id="email" placeholder="youremail@email.com" className="text-md" />
                         </div>
                         <div className="contact-input-item-container">
                             <label className="contact-input-label" htmlFor="last_name">Message</label>
-                            <textarea type="email" id="message" placeholder="Send me a message and I'll reply you as soon as possible..." />
+                            <textarea
+                                id="message"
+                                placeholder="Send me a message and I'll reply you as soon as possible..."
+                                className="text-md"
+                            />
                         </div>
-                        <div style={{ display: "flex", alignItems: "center" }}>
-                            <input type={"checkbox"} className="contact-checkbox" />
-                            <p>You agree to providing your data to Dawkaka who may contact you.</p>
+                        <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                            <div className="contact-checkbox-container">
+                                <input type={"checkbox"} className="contact-checkbox" />
+                                <span className="checkmark"></span>
+                            </div>
+                            <label>You agree to providing your data to Dawkaka who may contact you.</label>
                         </div>
-                        <button className="contact-btn-send-msg">Send message</button>
+                        <button className="contact-btn-send-msg" onClick={(e) => e.preventDefault()}>Send message</button>
                     </form>
 
                 </div>
