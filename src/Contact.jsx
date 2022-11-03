@@ -31,7 +31,7 @@ export default function Contact() {
                                 id="message"
                                 placeholder="Send me a message and I'll reply you as soon as possible..."
                                 className="text-md"
-                            />
+                            ></textarea>
                         </div>
                         <div style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}>
                             <div className="contact-checkbox-container">
@@ -40,7 +40,7 @@ export default function Contact() {
                             </div>
                             <label>You agree to providing your data to Dawkaka who may contact you.</label>
                         </div>
-                        <button className="contact-btn-send-msg" onClick={(e) => e.preventDefault()}>Send message</button>
+                        <button className="contact-btn-send-msg" onClick={(e) => e.preventDefault()} id="btn__submit">Send message</button>
                     </form>
 
                 </div>
