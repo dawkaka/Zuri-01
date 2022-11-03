@@ -5,6 +5,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import Footer from '../components/footer';
 
 import App from './App'
 import Contact from "./Contact"
@@ -18,5 +19,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
+    <Footer />
   </React.StrictMode >
 )
