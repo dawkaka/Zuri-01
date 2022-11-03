@@ -29,3 +29,68 @@
     padding: 0px;
     gap: 20px;
 }
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+}
+
+.contact-name {
+    display: flex;
+    gap: 24px
+}
+
+.contact-input-item-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-input-label {
+    font-family: 'Inter';
+    font-weight: 550;
+    font-size: 14px;
+    line-height: 20px;
+    color: #344054;
+}
+
+.contact-input-item-container>input,
+.contact-input-item-container>textarea {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 14px;
+    gap: 8px;
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #667085;
+}
+
+.contact-checkbox {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+}
+
+.contact-btn-send-msg {
+
+    padding: 12px 20px;
+    gap: 8px;
+    background: #1570EF;
+    color: white;
+    border: 1px solid #1570EF;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+}
