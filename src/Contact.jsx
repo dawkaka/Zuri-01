@@ -33,7 +33,7 @@ export default function Contact() {
                                 className="text-md"
                             />
                         </div>
-                        <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                        <div style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}>
                             <div className="contact-checkbox-container">
                                 <input type={"checkbox"} className="contact-checkbox" />
                                 <span className="checkmark"></span>
