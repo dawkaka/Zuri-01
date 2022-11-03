@@ -71,6 +71,7 @@
     padding: 10px 14px;
     gap: 8px;
     background: #FFFFFF;
+    font-size: 16px;
     height: 44px;
     border: 1px solid #D0D5DD;
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
@@ -88,10 +89,11 @@
 }
 
 #message {
-    font-family: 'Inter';
+    font-family: inherit;
     padding: 10px 14px;
     height: 132px;
     gap: 8px;
+    font-size: 16px;
     background: #FFFFFF;
     border: 1px solid #D0D5DD;
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);

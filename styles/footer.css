@@ -1,10 +1,26 @@
-.footer {
+.footer-wrapper {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 0px;
+}
+
+.footer {
+    padding: 0 32px;
+    width: 100%;
+}
+
+.footer>div {
+    border-top: 1px solid #EAECF0;
+    display: flex;
+    padding: 48px 0;
+    width: 100%;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 32px;
 }
+
+
 
 @media only screen and (max-width: 700px) {
 

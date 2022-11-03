@@ -1,5 +1,8 @@
 #root {
   width: min(100%, 1100px);
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
 }
 
 body {
