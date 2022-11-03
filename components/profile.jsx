@@ -14,7 +14,7 @@ export const Profile = ({ picture, twitterName, slackName }) => {
                     <path d="M2.16665 2.83332C2.62688 2.83332 2.99998 2.46023 2.99998 1.99999C2.99998 1.53975 2.62688 1.16666 2.16665 1.16666C1.70641 1.16666 1.33331 1.53975 1.33331 1.99999C1.33331 2.46023 1.70641 2.83332 2.16665 2.83332Z" stroke="#98A2B3" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
             </div>
-            <div style={{ position: "relative", borderRadius: "50%", overflow: "hidden", width: "88px", height: "88px", backgroundColor: "blue" }}>
+            <div style={{ position: "relative", borderRadius: "50%", overflow: "hidden", width: "88px", height: "88px" }}>
                 <img src={picture} height={88} width={88} id="profile__img" className="p-image" />
                 <div className="img-overlay">
                     <img src="./camera_icon.png" style={{ position: "absolute", bottom: "5px", left: "50%", transform: "translateX(-50%)", cursor: "pointer" }} />

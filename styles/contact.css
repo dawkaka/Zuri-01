@@ -84,13 +84,14 @@
     border: 1px solid #84CAFF;
 }
 
-.contact-input-item-container>input:active {
+/* .contact-input-item-container>input:active {
     outline: 3px solid #84CAFF;
-}
+} */
 
 #message {
     font-family: inherit;
     padding: 10px 14px;
+    --u-b-color: #84CAFF;
     height: 132px;
     gap: 8px;
     font-size: 16px;
@@ -102,11 +103,11 @@
 
 #message:focus {
     outline: none;
-    border: 1px solid #84CAFF;
+    border: 1px solid var(--u-b-color);
 }
 
 #message:active {
-    outline: 3px solid #84CAFF;
+    outline: 3px solid var(--u-b-color);
 }
 
 /* .contact-checkbox {
