@@ -44,6 +44,7 @@ function App() {
         <div><p>HNG Internship 9 Frontend Task</p></div>
         <div><img src="./I4G.png" /></div></footer>
     </div>
+
   )
 }
 

@@ -1,4 +1,5 @@
-import React, { MouseEvent, MouseEventHandler, useState } from "react"
+import React, { useState } from "react"
+import { Link as Li } from "react-router-dom"
 import "../styles/link.css"
 
 const links = [
@@ -27,10 +28,16 @@ const links = [
         title: "The Best Design Books",
         url: "https://books.zuri.team/design-rules",
         id: "book__design",
+    },
+    {
+        title: "Contact me",
+        url: "/contact",
+        id: "contact",
+        internal: true
     }
 ]
 
-const Link = ({ url, title, id, sub }) => {
+const Link = ({ url, title, id, sub, internal }) => {
     const [showSub, setShowsub] = useState(false)
     const toggleSub = (e) => {
         e.stopPropagation()
@@ -41,9 +48,12 @@ const Link = ({ url, title, id, sub }) => {
     return (
         <article className="zuri-link-article">
             <div className="link-wrapper">
-                <a href={url} className="zuri-a tx-l" id={id}>
-                    {title}
-                </a>
+                {
+                    internal ?
+                        <a className="zuri-a tx-l"><Li to="/contact" style={{ color: "inherit" }}>{title}</Li></a>
+                        :
+                        <a href={url} className="zuri-a tx-l" id={id}>{title}</a>
+                }
                 {
                     sub && <button onClick={toggleSub} className="toggle-button" style={{ transform: showSub ? "translateY(-50%) rotate(180deg)" : "translateY(-50%) rotate(0)" }}>
                         <svg width="30px" height="30px" viewBox="0 0 24 24" id="arrow_down" data-name="arrow down" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
