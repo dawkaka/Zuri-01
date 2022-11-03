@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 
 import App from './App'
+import Contact from "./Contact"
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -14,7 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Router>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/contact" element={<h1>Hello world</h1>} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   </React.StrictMode >
