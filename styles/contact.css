@@ -184,6 +184,7 @@
 .contact-btn-send-msg {
     width: 100%;
     padding: 12px 20px;
+    --outline: 5px solid #84CAFF;
     gap: 8px;
     background: #1570EF;
     color: white;
@@ -201,7 +202,11 @@ button:focus {
     background-color: #175CD3;
 }
 
+.contact-btn-send-msg:disabled {
+    cursor: not-allowed;
+}
+
 .contact-btn-send-msg:active {
-    outline: 5px solid #84CAFF;
+    outline: var(--outline);
     border-color: #1570EF;
 }

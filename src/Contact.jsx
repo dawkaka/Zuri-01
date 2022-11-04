@@ -125,8 +125,10 @@ export default function Contact() {
                             <label>You agree to providing your data to Dawkaka who may contact you.</label>
                         </div>
                         <button
-                            style={{ backgroundColor: noErros ? "" : "#B2DDFF", borderColor: noErros ? "" : "#B2DDFF" }}
-                            className="contact-btn-send-msg" onClick={(e) => e.preventDefault()} id="btn__submit">Send message</button>
+                            style={{ backgroundColor: noErros ? "" : "#B2DDFF", borderColor: noErros ? "" : "#B2DDFF", "--outline": noErros ? "" : "none" }}
+                            className="contact-btn-send-msg" onClick={(e) => e.preventDefault()} id="btn__submit"
+                            disabled={!noErros}
+                        >Send message</button>
                     </form>
 
                 </div>
