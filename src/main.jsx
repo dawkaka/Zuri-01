@@ -16,7 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Router>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" exact element={<Contact />} />
       </Routes>
     </Router>
     <Footer />
