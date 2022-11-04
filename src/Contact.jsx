@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import { useRef } from "react"
 import { useEffect } from "react"
 import { isEmail, isMessage, isName } from "../lib/validators"
 import "../styles/contact.css"
