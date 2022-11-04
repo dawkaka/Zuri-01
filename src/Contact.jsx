@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { useEffect } from "react"
 import { isEmail, isMessage, isName } from "../lib/validators"
 import "../styles/contact.css"
 
@@ -12,6 +13,10 @@ export default function Contact() {
     const [showErrors, setShowErrors] = useState([])
     const [emailErrors, setEmailErrors] = useState([])
     const [messageErrors, setMessageErrors] = useState([])
+
+    useEffect(() => {
+        window.scrollTo({ top: 0 })
+    })
 
     const handleFirstName = (name) => {
         const errors = isName(name)
