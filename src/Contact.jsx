@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { useRef } from "react"
 import { useEffect } from "react"
 import { isEmail, isMessage, isName } from "../lib/validators"
 import "../styles/contact.css"
@@ -13,6 +14,7 @@ export default function Contact() {
     const [showErrors, setShowErrors] = useState([])
     const [emailErrors, setEmailErrors] = useState([])
     const [messageErrors, setMessageErrors] = useState([])
+    const [checked, setChecked] = useState(false)
 
     useEffect(() => {
         window.scrollTo({ top: 0 })
@@ -40,7 +42,9 @@ export default function Contact() {
         if (message.length > 500) return
         setMessage(message)
     }
-    const noErros = firstNameErrors.length === 0 && lastNameErrors.length === 0 && emailErrors.length === 0 && messageErrors.length === 0 && firstName !== "" && lastName !== "" && email !== "" && message !== ""
+    const noErros = firstNameErrors.length === 0 && lastNameErrors.length === 0 &&
+        emailErrors.length === 0 && messageErrors.length === 0 && firstName !== ""
+        && lastName !== "" && email !== "" && message !== "" && checked
 
     return (
         <div className="contact-container">
@@ -113,7 +117,9 @@ export default function Contact() {
                         </div>
                         <div style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}>
                             <div className="contact-checkbox-container">
-                                <input type={"checkbox"} className="contact-checkbox" />
+                                <input type={"checkbox"} className="contact-checkbox" onChange={(e) => {
+                                    e.currentTarget.checked ? setChecked(true) : setChecked(false)
+                                }} />
                                 <span className="checkmark"></span>
                             </div>
                             <label>You agree to providing your data to Dawkaka who may contact you.</label>
