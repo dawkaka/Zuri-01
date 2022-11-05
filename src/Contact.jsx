@@ -66,8 +66,10 @@ export default function Contact() {
                                     type="text" id="first_name"
                                     placeholder="Enter first name" className="text-md"
                                     value={firstName}
+                                    name="first_name"
                                     onBlur={() => setShowErrors(prv => [...prv, "first_name"])}
                                     onChange={(e) => handleFirstName(e.currentTarget.value)}
+                                    required
                                 />
                                 {
                                     showErrors.includes("first_name") && <InputHelpfulMessage messages={firstNameErrors} />
@@ -78,9 +80,11 @@ export default function Contact() {
                                 <input
                                     type="text" id="last_name" placeholder="Enter last name"
                                     className="text-md"
+                                    name="last_name"
                                     value={lastName}
                                     onBlur={() => setShowErrors(prv => [...prv, "last_name"])}
                                     onChange={(e) => handleLastName(e.currentTarget.value)}
+                                    required
                                 />
                                 {
                                     showErrors.includes("last_name") && <InputHelpfulMessage messages={lastNameErrors} />
@@ -92,9 +96,11 @@ export default function Contact() {
                             <input
                                 type="email" id="email"
                                 placeholder="youremail@email.com" className="text-md"
+                                name="email"
                                 value={email}
                                 onBlur={() => setShowErrors(prv => [...prv, "email"])}
                                 onChange={(e) => handleEmail(e.currentTarget.value)}
+                                required
 
                             />
                             {
@@ -107,13 +113,14 @@ export default function Contact() {
                                 id="message"
                                 placeholder="Send me a message and I'll reply you as soon as possible..."
                                 className="text-md"
+                                name="message"
                                 value={message}
                                 onBlur={() => setShowErrors(prv => [...prv, "message"])}
                                 onChange={(e) => handleMessage(e.currentTarget.value)}
                                 style={{
                                     "--u-b-color": showErrors.includes("message") && messageErrors.length > 0 ? "#F89687" : "#84CAFF"
                                 }}
-
+                                required
                             ></textarea>
                             {
                                 showErrors.includes("message") && <InputHelpfulMessage messages={messageErrors} error />
@@ -121,16 +128,20 @@ export default function Contact() {
                         </div>
                         <div style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}>
                             <div className="contact-checkbox-container">
-                                <input type={"checkbox"} className="contact-checkbox" onChange={(e) => {
-                                    e.currentTarget.checked ? setChecked(true) : setChecked(false)
-                                }} />
+                                <input type={"checkbox"} className="contact-checkbox"
+                                    required
+                                    name="agreed"
+                                    value={checked}
+                                    onChange={(e) => {
+                                        e.currentTarget.checked ? setChecked(true) : setChecked(false)
+                                    }} />
                                 <span className="checkmark"></span>
                             </div>
                             <label>You agree to providing your data to Dawkaka who may contact you.</label>
                         </div>
                         <button
                             style={{ backgroundColor: noErros ? "" : "#B2DDFF", borderColor: noErros ? "" : "#B2DDFF", "--outline": noErros ? "" : "none" }}
-                            className="contact-btn-send-msg" onClick={(e) => e.preventDefault()} id="btn__submit"
+                            className="contact-btn-send-msg" id="btn__submit"
                             disabled={!noErros}
                         >Send message</button>
                     </form>
